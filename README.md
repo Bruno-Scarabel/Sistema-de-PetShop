@@ -4,4 +4,4 @@ O PetHub é um sistema de gerenciamento para Pet Shops que tem como objetivo org
 Além disso, possibilita o agendamento de serviços como banho, tosa e consultas veterinárias, bem como o controle de vendas de produtos, histórico de atendimentos dos animais e registros de pagamentos.
 
 Com essas funcionalidades, o sistema busca facilitar a administração do pet shop, melhorar o atendimento aos clientes e manter um histórico completo das informações relacionadas aos pets e aos serviços realizados.
-Lista de autores : Gabriel, Marco, Bruno, Eduardo
+Lista de autores : Gabriel, Marco, Bruno Scarabel de Oliveira, Eduardo
