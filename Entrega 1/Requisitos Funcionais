@@ -1,1 +1,33 @@
 
+Cliente e Animal
+  O sistema deve permitir cadastrar clientes
+  O sistema deve permitir cadastrar animais
+  O sistema deve permitir associar um cliente aos seus animais
+Agendamento e Atendimento
+  O sistema deve permitir agendar consultas
+  O sistema deve permitir registrar status do agendamento
+  O sistema deve permitir confirmar agendamentos
+  O sistema deve permitir registrar consultas realizadas
+Funcionários
+  O sistema deve permitir cadastrar funcionários
+  O sistema deve permitir definir funcionários como atendentes ou veterinários
+  O sistema deve permitir vincular veterinários às consultas
+Consulta, Exame e Receita
+  O sistema deve permitir registrar diagnósticos em consultas
+  O sistema deve permitir gerar exames a partir de consultas
+  O sistema deve permitir registrar resultados de exames
+  O sistema deve permitir emitir receitas médicas
+Produtos e Estoque
+  O sistema deve permitir cadastrar produtos
+  O sistema deve permitir classificar produtos (medicamentos/suprimentos)
+  O sistema deve permitir controlar o estoque da loja
+  O sistema deve permitir associar produtos a fornecedores
+Compras e Pagamentos
+  O sistema deve permitir registrar compras realizadas por clientes
+  O sistema deve permitir registrar itens de uma compra
+  O sistema deve permitir registrar pagamentos
+  O sistema deve permitir definir forma de pagamento
+Serviços e Clínica Externa
+  O sistema deve permitir cadastrar serviços oferecidos
+  O sistema deve permitir registrar execução de serviços
+  O sistema deve permitir encaminhar exames para clínicas externas
