@@ -1,51 +1,51 @@
 Regras de Negócio (RN)
 Cliente e Animal:
-RN01 – Um cliente pode possuir zero ou vários animais, mas todo animal deve estar vinculado a exatamente um cliente.
-RN02 – Um cliente deve possuir um endereço (casa) cadastrado obrigatório.
-RN03 – Um animal deve possuir informações obrigatórias como nome, espécie e porte.
+  Um cliente pode possuir zero ou vários animais, mas todo animal deve estar vinculado a exatamente um cliente.
+  Um cliente deve possuir um endereço (casa) cadastrado obrigatório.
+  Um animal deve possuir informações obrigatórias como nome, espécie e porte.
 Agendamento e Atendimento:
-RN04 – Um agendamento deve estar vinculado a exatamente um animal.
-RN05 – Um agendamento deve possuir data, hora e status obrigatórios.
-RN06 – Um agendamento só pode ser confirmado por um atendente.
-RN07 – Um agendamento pode ou não ser confirmado (0 ou 1 confirmação).
-RN08 – Uma consulta só pode existir se houver um agendamento prévio.
+  Um agendamento deve estar vinculado a exatamente um animal.
+  Um agendamento deve possuir data, hora e status obrigatórios.
+  Um agendamento só pode ser confirmado por um atendente.
+  Um agendamento pode ou não ser confirmado (0 ou 1 confirmação).
+  Uma consulta só pode existir se houver um agendamento prévio.
 Funcionários:
-RN09 – Todo funcionário deve possuir CPF único.
-RN10 – Um funcionário deve ser classificado como atendente ou veterinário (especialização obrigatória).
-RN11 – Apenas funcionários do tipo veterinário podem realizar consultas.
-RN12 – Um atendente pode confirmar agendamentos, mas não pode realizar consultas.
+  Todo funcionário deve possuir CPF único.
+  Um funcionário deve ser classificado como atendente ou veterinário (especialização obrigatória).
+  Apenas funcionários do tipo veterinário podem realizar consultas.
+  Um atendente pode confirmar agendamentos, mas não pode realizar consultas.
 Consulta, Exame e Receita:
-RN13 – Toda consulta deve estar vinculada a um veterinário.
-RN14 – Uma consulta deve possuir data e diagnóstico obrigatórios.
-RN15 – Uma consulta pode gerar zero ou vários exames.
-RN16 – Todo exame deve estar vinculado a uma única consulta.
-RN17 – Um exame deve possuir tipo, status e data de realização.
-RN18 – Um exame pode ser encaminhado para uma clínica externa.
-RN19 – Uma consulta pode gerar uma ou mais receitas.
-RN20 – Toda receita deve possuir data de emissão e validade.
-RN21 – Apenas consultas podem gerar receitas (não pode existir receita sem consulta).
+  Toda consulta deve estar vinculada a um veterinário.
+  Uma consulta deve possuir data e diagnóstico obrigatórios.
+  Uma consulta pode gerar zero ou vários exames.
+  Todo exame deve estar vinculado a uma única consulta.
+  Um exame deve possuir tipo, status e data de realização.
+  Um exame pode ser encaminhado para uma clínica externa.
+  Uma consulta pode gerar uma ou mais receitas.
+  Toda receita deve possuir data de emissão e validade.
+  Apenas consultas podem gerar receitas (não pode existir receita sem consulta).
 Produtos e Estoque:
-RN22 – Todo produto deve possuir nome, preço e categoria.
-RN23 – Um produto deve ser classificado como medicamento ou suprimento (especialização).
-RN24 – Apenas produtos do tipo medicamento podem ser prescritos em receitas.
-RN25 – Um produto pode estar associado a zero ou vários fornecedores.
-RN26 – O estoque da loja deve controlar capacidade, localização e tipo de estoque.
-RN27 – Um produto pode estar armazenado em zero ou vários estoques.
+  Todo produto deve possuir nome, preço e categoria.
+  Um produto deve ser classificado como medicamento ou suprimento (especialização).
+  Apenas produtos do tipo medicamento podem ser prescritos em receitas.
+  Um produto pode estar associado a zero ou vários fornecedores.
+  O estoque da loja deve controlar capacidade, localização e tipo de estoque.
+  Um produto pode estar armazenado em zero ou vários estoques.
 Compras e Pagamentos:
-RN28 – Uma compra deve estar vinculada a um cliente.
-RN29 – Uma compra deve possuir data e forma de pagamento obrigatórias.
-RN30 – Uma compra deve possuir um ou mais itens de compra.
-RN31 – Cada item de compra deve referenciar um único produto.
-RN32 – Um item de compra deve possuir quantidade e preço unitário.
-RN33 – Uma compra pode gerar um pagamento.
-RN34 – Todo pagamento deve possuir data e método de pagamento.
+  Uma compra deve estar vinculada a um cliente.
+  Uma compra deve possuir data e forma de pagamento obrigatórias.
+  Uma compra deve possuir um ou mais itens de compra.
+  Cada item de compra deve referenciar um único produto.
+  Um item de compra deve possuir quantidade e preço unitário.
+  Uma compra pode gerar um pagamento.
+  Todo pagamento deve possuir data e método de pagamento.
 Serviços e Execução:
-RN35 – Um cliente pode solicitar um ou vários serviços.
-RN36 – Um serviço deve possuir descrição e preço obrigatórios.
-RN37 – A execução de um serviço deve estar vinculada a:
-um cliente
-um funcionário
-RN38 – Um funcionário pode executar vários serviços.
+  Um cliente pode solicitar um ou vários serviços.
+  Um serviço deve possuir descrição e preço obrigatórios.
+  A execução de um serviço deve estar vinculada a:
+  um cliente
+  um funcionário
+  Um funcionário pode executar vários serviços.
 Clínica Externa:
-RN39 – Um exame pode ser encaminhado para uma clínica externa.
-RN40 – Uma clínica externa deve possuir nome, telefone, endereço e especialidade.
+  Um exame pode ser encaminhado para uma clínica externa.
+  Uma clínica externa deve possuir nome, telefone, endereço e especialidade.
