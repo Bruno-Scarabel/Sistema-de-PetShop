@@ -1,0 +1,48 @@
+Objetivo: Mostrar produtos cujo preço é maior que a média dos produtos da mesma categoria.
+
+SELECT p.nome,
+       p.categoria,
+       p.preco
+FROM Produto p
+WHERE p.preco >
+(
+    SELECT AVG(preco)
+    FROM Produto
+    WHERE categoria = p.categoria
+);
+
+Objetivo: Descobrir quais clientes compraram o produto de maior preço.
+
+SELECT c.nome,
+       p.nome AS produto,
+       p.preco
+FROM Cliente c
+JOIN Compra co
+ON c.cpf = co.cpf_cliente_FK
+JOIN Item_Compra ic
+ON co.id_compra = ic.id_compra_FK
+JOIN Produto p
+ON ic.id_produto_FK = p.id_produto
+WHERE p.preco =
+(
+    SELECT MAX(preco)
+    FROM Produto
+);
+
+Objetivo: Mostrar todos os produtos classificados como medicamentos ou suprimentos utilizando um operador de conjunto.
+
+SELECT p.id_produto,
+       p.nome,
+       'Medicamento' AS tipo
+FROM Produto p
+JOIN Medicamento m
+ON p.id_produto = m.id_produto_FK
+
+UNION
+
+SELECT p.id_produto,
+       p.nome,
+       'Suprimento' AS tipo
+FROM Produto p
+JOIN Suprimentos s
+ON p.id_produto = s.id_produto_FK;
