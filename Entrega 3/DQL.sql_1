@@ -1,0 +1,35 @@
+Objetivo: Mostrar quais clientes fizeram compras com valor superior ao valor médio de todas as compras.
+
+SELECT c.nome,
+       co.id_compra,
+       co.valor_total
+FROM Cliente c
+JOIN Compra co
+ON c.cpf = co.cpf_cliente_FK
+WHERE co.valor_total >
+(
+    SELECT AVG(valor_total)
+    FROM Compra
+);
+
+Objetivo: Encontrar o(s) produto(s) com o maior preço cadastrado.
+
+SELECT nome,
+       preco
+FROM Produto
+WHERE preco =
+(
+    SELECT MAX(preco)
+    FROM Produto
+);
+
+Objetivo: Listar clientes que não possuem nenhuma compra registrada.
+
+SELECT nome,
+       cpf
+FROM Cliente
+WHERE cpf NOT IN
+(
+    SELECT cpf_cliente_FK
+    FROM Compra
+);
